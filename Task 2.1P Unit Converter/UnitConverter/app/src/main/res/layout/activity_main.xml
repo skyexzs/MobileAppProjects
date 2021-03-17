@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="start|center_vertical"
+        app:layout_constraintEnd_toStartOf="@+id/value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="208dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Please enter a number"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="@string/zero"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/unit1_value"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/zero_dec"
+        android:textColor="#B81414"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <TextView
+        android:id="@+id/unit2_value"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/zero_dec"
+        android:textColor="#B81414"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit1_value" />
+
+    <TextView
+        android:id="@+id/unit3_value"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/zero_dec"
+        android:textColor="#B81414"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit2_value" />
+
+    <TextView
+        android:id="@+id/unit1_text"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="start|center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unit1_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/unit1_value" />
+
+    <TextView
+        android:id="@+id/unit2_text"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="start|center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unit2_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/unit1_value" />
+
+    <TextView
+        android:id="@+id/unit3_text"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="start|center_vertical"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unit3_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/unit1_value" />
+
+    <ImageButton
+        android:id="@+id/weight_btn"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/default_button_selector"
+        android:contentDescription="weight"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/weight" />
+
+    <ImageButton
+        android:id="@+id/length_btn"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/default_button_selector"
+        android:contentDescription="weight"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/length" />
+
+    <ImageButton
+        android:id="@+id/temp_btn"
+        style="@android:style/Widget.DeviceDefault.ImageButton"
+        android:layout_width="89dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/default_button_selector"
+        android:contentDescription="weight"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weight_btn"
+        app:layout_constraintStart_toEndOf="@+id/length_btn"
+        app:srcCompat="@mipmap/temperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
