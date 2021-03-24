@@ -44,19 +44,19 @@ public class AddExpensesActivity extends AppCompatActivity {
         switch (message) {
             case "Home Rent":
                 instructionsTextView.setText(R.string.home_rent_instructions);
-                imageView.setImageResource(R.mipmap.cash_home);
+                imageView.setImageResource(R.drawable.cash_home);
                 break;
             case "Eating Out":
                 instructionsTextView.setText(R.string.eating_out_instructions);
-                imageView.setImageResource(R.mipmap.eating_out);
+                imageView.setImageResource(R.drawable.eating_out);
                 break;
             case "Travel":
                 instructionsTextView.setText(R.string.travel_instructions);
-                imageView.setImageResource(R.mipmap.train);
+                imageView.setImageResource(R.drawable.train);
                 break;
             case "Shopping":
                 instructionsTextView.setText(R.string.shopping_instructions);
-                imageView.setImageResource(R.mipmap.shopping);
+                imageView.setImageResource(R.drawable.shopping);
                 break;
         }
     }
