@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+    <string-array name="expenses">
+        <item>Home Rent</item>
+        <item>Eating Out</item>
+        <item>Travel</item>
+        <item>Shopping</item>
+    </string-array>
+    <string name="home_rent_instructions">Enter your home rent:</string>
+    <string name="eating_out_instructions">Enter your eating out:</string>
+    <string name="travel_instructions">Enter your travel expenses:</string>
+    <string name="shopping_instructions">Enter your shopping expenses:</string>
+    <string name="currency">AUD</string>
+    <string name="zero">0</string>
+    <string name="button_add">add</string>
+    <string name="enter_number_hint">Please enter a number</string>
+    <string name="expenses_total">Total spent: %.2f$</string>
+</resources>
