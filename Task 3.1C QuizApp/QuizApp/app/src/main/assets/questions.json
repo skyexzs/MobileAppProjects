@@ -1,0 +1,64 @@
+{
+  "questions": [
+    {
+      "question": "A(n) ________ is an application component that provides a screen with which users can interact in order to do something.",
+      "choices": ["Service", "Activity", "Content providers"],
+      "answer": 1
+    },
+    {
+      "question": "What is the name of the user interface element that displays text to the user?",
+      "choices": ["Button", "EditText", "TextView"],
+      "answer": 2
+    },
+    {
+      "question": "The ________ event of a button is used to run a function when the button is pressed.",
+      "choices": ["onClick", "onPress", "onClicked"],
+      "answer": 0
+    },
+    {
+      "question": "The ________ activity template provides a single layout file with sample text content to start with.",
+      "choices": ["Empty", "Blank", "Basic"],
+      "answer": 0
+    },
+    {
+      "question": "Which file describes essential information about your app to the Android build tools, the Android OS, and Google Play?",
+      "choices": ["MainActivity.java", "activity_main.xml", "AndroidManifest.xml"],
+      "answer": 2
+    },
+    {
+      "question": "Which programming language does Android Studio <b>not</b> support?",
+      "choices": ["C++", "C#", "Kotlin"],
+      "answer": 1
+    },
+    {
+      "question": "The Android ________ simulates Android devices on your computer so that you can test your application without a physical Android device.",
+      "choices": ["Simulator", "Executor", "Emulator"],
+      "answer": 2
+    },
+    {
+      "question": "What is the name of the object that is needed to launch new activities?",
+      "choices": ["Intent", "Service", "Entity"],
+      "answer": 0
+    },
+    {
+      "question": "<i>This class represents the basic building block for user interface components</i>. Which class has this description?",
+      "choices": ["Drawable", "View", "Canvas"],
+      "answer": 1
+    },
+    {
+      "question": "What is the name of the lifecycle callback method that is called when an activity is created?",
+      "choices": ["onStart", "onCreate", "onResume"],
+      "answer": 1
+    },
+    {
+      "question": "What is the name of the lifecycle callback method that is called when the activity is fully-obstructed and not visible?",
+      "choices": ["onStop", "onRestart", "onResume"],
+      "answer": 0
+    },
+    {
+      "question": "A(n) ________ is a collection of activities that users interact with when performing a certain job.",
+      "choices": ["Runtime Environment", "Activity Collection", "Task"],
+      "answer": 2
+    }
+  ]
+}

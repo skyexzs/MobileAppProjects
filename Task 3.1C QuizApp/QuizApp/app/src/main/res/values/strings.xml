@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SIT305 Quiz</string>
+    <string name="title">SIT305 Quiz App</string>
+    <string name="enter_name">Enter your name:</string>
+    <string name="name_placeholder">Name</string>
+    <string name="start_button">Start</string>
+    <string name="header">Welcome %s!</string>
+    <string name="question_title">SIT305 Android Concepts Quiz</string>
+    <string name="progress">%d/%d</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="congratulations">Congratulations %s!</string>
+    <string name="score_header">YOUR SCORE:</string>
+    <string name="score">%d/%d</string>
+    <string name="new_quiz">Take New Quiz</string>
+    <string name="finish">Finish</string>
+    <string name="warning_message">Quiz progress will be lost!</string>
+    <string name="warning_title">Quit Game?</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>
