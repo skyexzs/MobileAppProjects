@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workout Timer</string>
+    <string name="time_spent">You spent %02d:%02d on %s last time.</string>
+    <string name="time_spent_default">You have no previous record.</string>
+    <string name="timer">%02d:%02d:%02d</string>
+    <string name="workout_type">Enter your workout type:</string>
+</resources>
