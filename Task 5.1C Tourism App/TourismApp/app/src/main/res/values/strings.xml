@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TourismApp</string>
+    <string name="top_text">Top Destinations</string>
+    <string name="places_to_go">Places to Go</string>
+</resources>
