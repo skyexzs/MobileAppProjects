@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Notes App</string>
+    <string name="new_btn">Create a New Note</string>
+    <string name="show_btn">Show All Notes</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="update_btn">Update</string>
+    <string name="delete_btn">Delete</string>
+    <string name="new_note">New Note</string>
+    <string name="no_note">There are no notes in the database. </string>
+</resources>
