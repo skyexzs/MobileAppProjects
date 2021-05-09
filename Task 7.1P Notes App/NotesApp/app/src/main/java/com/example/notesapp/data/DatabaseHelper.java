@@ -20,16 +20,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String CREATE_USER_TABLE = "CREATE TABLE " + Util.TABLE_NAME + "(" + Util.NOTE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
+        String CREATE_NOTE_TABLE = "CREATE TABLE " + Util.TABLE_NAME + "(" + Util.NOTE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + Util.TITLE + " TEXT, " + Util.CONTENT + " TEXT)";
 
-        sqLiteDatabase.execSQL(CREATE_USER_TABLE);
+        sqLiteDatabase.execSQL(CREATE_NOTE_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
-        String DROP_USER_TABLE = "DROP TABLE IF EXISTS " + Util.TABLE_NAME;
-        sqLiteDatabase.execSQL(DROP_USER_TABLE);
+        String DROP_NOTE_TABLE = "DROP TABLE IF EXISTS " + Util.TABLE_NAME;
+        sqLiteDatabase.execSQL(DROP_NOTE_TABLE);
 
         onCreate(sqLiteDatabase);
     }
