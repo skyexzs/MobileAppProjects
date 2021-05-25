@@ -174,7 +174,7 @@ public class AddFoodActivity extends AppCompatActivity {
         String userEmail = userDb.fetchEmailFromToken(token);
 
         FoodData foodData = new FoodData(chosenImgUri, title, description,
-                chosenCalendar.getTimeInMillis(), quantity, location, false, userEmail);
+                chosenCalendar.getTimeInMillis(), quantity, location, true, userEmail);
 
         long result = foodDb.insertFoodData(foodData);
         if (result < 0) {

@@ -1,6 +1,7 @@
 package com.example.foodrescueapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -19,6 +20,7 @@ import com.example.foodrescueapp.model.FoodData;
 import com.example.foodrescueapp.util.Authenticator;
 import com.example.foodrescueapp.util.Util;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder> {
@@ -49,7 +51,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         holder.foodTitleTextView.setText(foodList.get(position).getTitle());
         holder.foodLocationTextView.setText(foodList.get(position).getLocation());
         holder.foodDescTextView.setText(foodList.get(position).getDescription());
-        if (foodList.get(position).getOwner_email().equals(Authenticator.getUserEmail(context))) {
+        /*if (foodList.get(position).getOwner_email().equals(Authenticator.getUserEmail(context))) {
             holder.foodShareButton.setVisibility(View.VISIBLE);
             if (!foodList.get(position).isShared()) {
                 holder.foodShareButton.setColorFilter(null);
@@ -79,7 +81,26 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
             }
         } else {
             holder.foodShareButton.setVisibility(View.INVISIBLE);
-        }
+        }*/
+        holder.foodShareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //https://developer.android.com/training/sharing/send
+                //https://stackoverflow.com/questions/20333186/how-to-share-image-text-together-using-action-send-in-android
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Free Food");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Free food '" + foodList.get(position).getTitle() + "' available!\n"
+                        + "Description: " + foodList.get(position).getDescription() + "\n"
+                        + "Quantity: " + foodList.get(position).getQuantity() + "\n"
+                        + "When: " + new SimpleDateFormat("dd/MM/yyyy hh:mm aa").format(foodList.get(position).getDateAndTime()) + "\n"
+                        + "Location: " + foodList.get(position).getLocation());
+                shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse(foodList.get(position).getImage_path()));
+                shareIntent.setType("image/*");
+                shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+                context.startActivity(Intent.createChooser(shareIntent, "send"));
+            }
+        });
     }
 
     @Override
