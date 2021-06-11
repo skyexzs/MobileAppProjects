@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeMenu"
+        android:title="@string/home" />
+    <item android:id="@+id/accountMenu"
+        android:title="@string/account" />
+    <item android:id="@+id/myListMenu"
+        android:title="@string/my_list" />
+    <item android:id="@+id/cartMenu"
+        android:title="Cart" />
+    <item android:id="@+id/signOutMenu"
+        android:title="@string/sign_out" />
+</menu>

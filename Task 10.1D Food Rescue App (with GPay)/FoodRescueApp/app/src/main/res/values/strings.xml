@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Food Rescue App</string>
+    <string name="email_box">Email:</string>
+    <string name="password_box">Password:</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="save">Save</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="home_title">Discover free food</string>
+    <string name="my_list_title">My List</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="my_list">My list</string>
+    <string name="sign_out">Sign out</string>
+    <string name="title">Title:</string>
+    <string name="description">Description:</string>
+    <string name="date">Date:</string>
+    <string name="pick_up_times">Pick up times:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="location">Location:</string>
+    <string name="time_placeholder">%02d:%02d</string>
+    <string name="one">1</string>
+    <string name="no_items">There are no items to display.</string>
+    <string name="add_to_cart">Add To Cart</string>
+</resources>
