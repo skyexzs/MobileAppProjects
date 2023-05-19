@@ -1,0 +1,99 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.webviewtest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:4:22-64
+12
+13    <application
+13-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:6:5-36:19
+14        android:allowBackup="true"
+14-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.8.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\87a796fe63836d99a2198ac6a6284cb3\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+16        android:dataExtractionRules="@xml/data_extraction_rules"
+16-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:8:9-65
+17        android:debuggable="true"
+18        android:fullBackupContent="@xml/backup_rules"
+18-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:9:9-54
+19        android:icon="@mipmap/ic_launcher"
+19-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:10:9-43
+20        android:label="@string/app_name"
+20-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:11:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:13:9-35
+23        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" >
+23-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:14:9-74
+24        <activity
+24-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:16:9-22:20
+25            android:name="com.example.webviewtest.WebViewActivity"
+25-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:17:13-44
+26            android:exported="false" >
+26-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:18:13-37
+27            <meta-data
+27-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:19:13-21:36
+28                android:name="android.app.lib_name"
+28-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:20:17-52
+29                android:value="" />
+29-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:21:17-33
+30        </activity>
+31        <activity
+31-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:23:9-35:20
+32            android:name="com.example.webviewtest.MainActivity"
+32-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:24:13-41
+33            android:exported="true" >
+33-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:25:13-36
+34            <intent-filter>
+34-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:26:13-30:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:27:17-69
+35-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:27:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:29:17-77
+37-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:29:27-74
+38            </intent-filter>
+39
+40            <meta-data
+40-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:19:13-21:36
+41                android:name="android.app.lib_name"
+41-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:20:17-52
+42                android:value="" />
+42-->D:\AndroidStudioProjects\WebViewTest\app\src\main\AndroidManifest.xml:21:17-33
+43        </activity>
+44
+45        <provider
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+46            android:name="androidx.startup.InitializationProvider"
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+47            android:authorities="com.example.webviewtest.androidx-startup"
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+48            android:exported="false" >
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+49            <meta-data
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+50                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+51                android:value="androidx.startup" />
+51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Willem Tranku\.gradle\caches\transforms-3\c03fa7bc00a04a375204b573f0966d9f\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+52            <meta-data
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Willem Tranku\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+53                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+53-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Willem Tranku\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+54                android:value="androidx.startup" />
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Willem Tranku\.gradle\caches\transforms-3\0ce9e5f033589fdf0ab757f82f7808ec\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+55        </provider>
+56    </application>
+57
+58</manifest>
